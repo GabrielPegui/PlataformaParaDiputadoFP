@@ -1,0 +1,166 @@
+/* Header styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+#main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+}
+
+.background-image-juliana {
+    background-image: url('../img/juliana-inicio.jpg');
+    /* Ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    /* Ajusta la altura según sea necesario */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    /* Coloca la imagen detrás del contenido */
+    background-color: rgba(0, 0, 0, 0.5);
+    ;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    /* Ajusta el padding según sea necesario */
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+}
+
+#main-header nav {
+    flex: 1;
+}
+
+#main-header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#main-header nav ul li {
+    margin-left: 25px;
+}
+
+#main-header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.content-main {
+    margin-top: 500px;
+    /* Ajusta este valor según la altura del menú */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Login styles */
+
+#container-login {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#front-img-login {
+    margin-bottom: 2rem;
+}
+
+.form-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#form-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #b6cd19;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* .image-container {
+    flex-grow: 1;
+    background: url('../img/Joelrodriguez-resized-768x975.png') center/cover no-repeat;
+    border-left: 1px solid #fff;
+    min-height: 100px;
+    min-width: 300px;
+  } */
+
+.forgot-pass {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.forgot-pass a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #fefefe;
+}
+
+.forgot-pass a:hover {
+    text-decoration: underline;
+}
+
+/* Padron de compromiso */
+
+.form-control::placeholder {
+    color: #ccc; /* Color más claro para los placeholders */
+}
